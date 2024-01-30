@@ -1,4 +1,4 @@
-name: "Enable Auto-Merge"
+name: "Auto-Merge"
 on:
   pull_request:
 
@@ -15,4 +15,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           REPOSITORY: ${{ github.event.pull_request.head.repo.full_name }}
-        run: gh pr merge --repo $REPOSITORY $PR_NUMBER --auto --squash
+        run: |
+          gh pr merge --repo $REPOSITORY $PR_NUMBER --auto --squash || true
+          gh pr review $PR_NUMBER --body "Auto-approved by auto-approve.yml" --approve --repo $REPOSITORY
