@@ -12,3 +12,10 @@ updates:
     allow:
      - dependency-type: all
 
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/examples/npm" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+     - dependency-type: all
+
