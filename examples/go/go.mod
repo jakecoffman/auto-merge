@@ -5,7 +5,7 @@ go 1.21.3
 require (
 	github.com/docker/cli v23.0.0+incompatible
 	github.com/moby/moby v23.0.0+incompatible
-	k8s.io/api v0.28.0
+	k8s.io/api v0.29.1
 )
 
 require (
