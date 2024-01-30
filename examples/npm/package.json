@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^1.0.28"
+    "vue": "^3.4.15"
   }
 }
