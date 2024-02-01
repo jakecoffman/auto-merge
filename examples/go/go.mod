@@ -4,7 +4,7 @@ go 1.21.3
 
 require (
 	github.com/docker/cli v25.0.1+incompatible
-	github.com/moby/moby v25.0.1+incompatible
+	github.com/moby/moby v25.0.2+incompatible
 	k8s.io/api v0.29.1
 )
 
