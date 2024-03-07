@@ -3,7 +3,7 @@ module github.com/jakecoffman/auto-merge
 go 1.21.3
 
 require (
-	github.com/docker/cli v25.0.3+incompatible
+	github.com/docker/cli v25.0.4+incompatible
 	github.com/moby/moby v25.0.4+incompatible
 	k8s.io/api v0.29.1
 )
