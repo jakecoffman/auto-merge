@@ -1,12 +1,12 @@
 module github.com/jakecoffman/auto-merge
 
 go 1.21.3
-toolchain go1.22.9
+toolchain go1.23.4
 
 require (
 	github.com/docker/cli v27.4.0+incompatible
 	github.com/moby/moby v27.4.0+incompatible
-	k8s.io/api v0.31.4
+	k8s.io/api v0.32.0
 )
 
 require (
