@@ -4,7 +4,7 @@ go 1.21.3
 toolchain go1.23.4
 
 require (
-	github.com/docker/cli v27.5.0+incompatible
+	github.com/docker/cli v27.5.1+incompatible
 	github.com/moby/moby v27.5.0+incompatible
 	k8s.io/api v0.32.1
 )
