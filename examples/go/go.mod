@@ -1,7 +1,7 @@
 module github.com/jakecoffman/auto-merge
 
 go 1.21.3
-toolchain go1.23.4
+toolchain go1.24.1
 
 require (
 	github.com/docker/cli v28.0.1+incompatible
@@ -19,7 +19,7 @@ require (
 	github.com/distribution/reference v0.6.0 // indirect
 	github.com/docker/distribution v2.8.3+incompatible // indirect
 	github.com/docker/docker v28.0.1+incompatible // indirect
-	github.com/docker/docker-credential-helpers v0.9.2 // indirect
+	github.com/docker/docker-credential-helpers v0.9.3 // indirect
 	github.com/docker/go v1.5.1-1.0.20160303222718-d30aec9fd63c // indirect
 	github.com/docker/go-connections v0.5.0 // indirect
 	github.com/docker/go-metrics v0.0.1 // indirect
