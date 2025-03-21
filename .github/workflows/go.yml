@@ -20,6 +20,7 @@ jobs:
 
     - name: Check go.mod is tidy
       run: |
+        cd examples/go
         go mod tidy
         git diff --exit-code go.mod go.sum || (echo "go.mod or go.sum is not tidy. Run 'go mod tidy' and commit the changes." && exit 1)
 
