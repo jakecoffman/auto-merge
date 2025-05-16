@@ -1,0 +1,28 @@
+name: Commit
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # fixes detached head state on Dependabot PRs
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Output's a SHA to sha.txt
+        run: |
+            echo "SHA: ${{ github.event.pull_request.head.sha }}" > sha.txt
+            git config --global user.name "Jake Bot"
+            git config --global user.email "jake@jakecoffman.com"
+            git add sha.txt
+            git commit -m "[dependabot skip] Update dist/ with build changes" || exit 0
+            git push
